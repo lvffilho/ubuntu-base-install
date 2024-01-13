@@ -39,3 +39,7 @@ sudo chmod 775 /data
 sudo chown -R ubuntu:ubuntu /data
 
 # Download Base Services
+git clone https://github.com/lvffilho/ubuntu-base-install.git
+cd ubuntu-base-install
+docker compose -f nginx-proxy-manager.yml up -d
+cd ..
